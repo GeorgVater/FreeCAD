@@ -215,6 +215,7 @@ OPTION(BUILD_TEST "Build the FreeCAD test module" ON)
 OPTION(BUILD_TECHDRAW "Build the FreeCAD Technical Drawing module" ON)
 OPTION(BUILD_WEB "Build the FreeCAD web module" ON)
 OPTION(BUILD_VR "Build the FreeCAD Oculus Rift support (need Oculus SDK 4.x or higher)" OFF)
+OPTION(BUILD_XV5 "Build the FreeCAD XV5 module" ON)
 
 if(MSVC)
     OPTION(BUILD_FEM_NETGEN "Build the FreeCAD FEM module with the NETGEN mesher" ON)
@@ -285,6 +286,7 @@ REQUIRES_MODS(BUILD_SKETCHER           BUILD_PART)
 REQUIRES_MODS(BUILD_SPREADSHEET        BUILD_DRAFT)
 REQUIRES_MODS(BUILD_START              BUILD_WEB)
 REQUIRES_MODS(BUILD_TECHDRAW           BUILD_PART BUILD_SPREADSHEET)
+REQUIRES_MODS(BUILD_XV5                BUILD_PART)
 
 # ==============================================================================
 

@@ -134,3 +134,7 @@ if(BUILD_TECHDRAW)
     add_subdirectory(Measure)
     add_subdirectory(TechDraw)
 endif(BUILD_TECHDRAW)
+
+if(BUILD_XV5)
+  add_subdirectory(XV5)
+endif(BUILD_XV5)
